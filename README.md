@@ -2,9 +2,16 @@
 
 Note that this requires [GD](https://github.com/czipperz/gd)
 
-This allows for you to easily git commit. Here are some commands you can do:
+This program allows for you to easily git commit. You can specify files or allow it to automatically commit all of them.
 
+Here is how to easily `git commit` all your files:
 <pre>
-$ gc 'Init'            # short for `$ clear; gd;           g add -A;        g cm -m 'Init'`
-$ gc README.md 'Init'  # short for `$ clear; gd README.md; g add README.md; g cm -m 'Init'`
+$ gc              # short for `$ clear; gd;           g add -A`
+# Then it lets you type a commit message...
+</pre>
+
+Here is how to easily `git commit` one file (or more if you specify them):
+<pre>
+$ gc README.md    # short for `$ clear; gd README.md; g add README.md`
+# Then it lets you type a commit message...
 </pre>
