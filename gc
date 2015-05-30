@@ -1,0 +1,17 @@
+#!/bin/bash
+if (( $# == 0 )); then
+	echo "Needs some arguments"
+	exit 1
+fi
+clear
+if (( $# > 1 )); then
+	while (( $# > 1 )); do
+		_file=shift
+		gd $_file
+		git add $_file
+	done
+else
+	gd
+	git add -A
+fi
+g cm -m shift
