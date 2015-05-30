@@ -11,5 +11,6 @@ else
 	gd
 	git add -A
 fi
-read -p "Commit message: " -r
+printf "\033[0;37mCommit message: \033[0m"
+read -r
 git commit -m "$REPLY"
