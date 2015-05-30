@@ -1,5 +1,7 @@
 #GC
 
+Note that this requires [GD](https://github.com/czipperz/gd)
+
 This allows for you to easily git commit. Here are some commands you can do:
 
 <pre>
