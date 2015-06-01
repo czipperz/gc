@@ -21,3 +21,7 @@ Here is how to easily `git commit` multiple files:
 $ gc README.md install gc   #Fully commits this repository
 # Then it lets you type a commit message...
 </pre>
+
+Example:
+
+![Image: http://i.imgur.com/Aq9yoWg.png](http://i.imgur.com/Aq9yoWg.png)
