@@ -6,12 +6,18 @@ This program allows for you to easily git commit. You can specify files or allow
 
 Here is how to easily `git commit` all your files:
 <pre>
-$ gc              # short for `$ clear; gd;           g add -A`
+$ gc
 # Then it lets you type a commit message...
 </pre>
 
-Here is how to easily `git commit` one file (or more if you specify them):
+Here is how to easily `git commit` one file:
 <pre>
-$ gc README.md    # short for `$ clear; gd README.md; g add README.md`
+$ gc README.md
+# Then it lets you type a commit message...
+</pre>
+
+Here is how to easily `git commit` multiple files:
+<pre>
+$ gc README.md install gc   #Fully commits this repository
 # Then it lets you type a commit message...
 </pre>
