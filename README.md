@@ -1,10 +1,12 @@
 #GC
 
-Note that this requires [GD](https://github.com/czipperz/gd)
+Note that this requires [GD](https://github.com/czipperz/gd).
 
 This program allows for you to easily git commit. You can specify files or allow it to automatically commit all of them.
 
-It clears the screens, `gd`s, then prompts for a commit message
+It clears the screens, `gd`s, then prompts for a commit message.
+
+There is one option available, `-u` (or `--undo`) which calls `git reset HEAD` for all inputted files.
 
 Here is how to easily `git commit` all your files:
 <pre>
