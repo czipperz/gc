@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-if [[ $1 -eq '-r' || $1 -eq '--reset' ]]; then
+if [ "$1" == '-r' -o "$1" == '--reset' ]; then
 	shift
 	git reset HEAD $@
 fi
