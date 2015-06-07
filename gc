@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-if [[ $1 -eq '-u' || $1 -eq '--undo' ]]; then
+if [[ $1 -eq '-r' || $1 -eq '--reset' ]]; then
 	shift
 	git reset HEAD $@
 fi
