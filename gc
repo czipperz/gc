@@ -6,7 +6,7 @@ if [ "$1" == "--help" -o "$1" == "-h" ]; then
     echo " * -d | --dont   don't unstage the files before firing \`git diff\`"
 fi
 clear
-if [ "$1" == '-r' -o "$1" == '--reset' ]; then
+if [ "$1" != '-d' -a "$1" != '--dont' ]; then
     shift
     git unstage $@
 fi
