@@ -9,7 +9,7 @@ fi
 clear
 if [ "$1" != '-d' -a "$1" != '--dont' ]; then
     shift
-    git unstage $@
+    git reset HEAD $@
 fi
 if (( $# > 0 )); then
     while (( $# > 0 )); do
