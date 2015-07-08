@@ -1,19 +1,19 @@
 #!/bin/bash
 clear
 if [ "$1" == '-r' -o "$1" == '--reset' ]; then
-	shift
-	git reset HEAD $@
+    shift
+    git reset HEAD $@
 fi
 if (( $# > 0 )); then
-	while (( $# > 0 )); do
-		_file=$1
-		shift
-		gd $_file
-		git add $_file
-	done
+    while (( $# > 0 )); do
+	_file=$1
+	shift
+	gd $_file
+	git add $_file
+    done
 else
-	gd
-	git add -A
+    gd
+    git add -A
 fi
 printf "\033[0;37mCommit message: \033[0m"
 read -r
