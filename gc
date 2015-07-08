@@ -2,7 +2,7 @@
 clear
 if [ "$1" == '-r' -o "$1" == '--reset' ]; then
     shift
-    git reset HEAD $@
+    git unstage $@
 fi
 if (( $# > 0 )); then
     while (( $# > 0 )); do
