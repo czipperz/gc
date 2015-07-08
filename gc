@@ -4,6 +4,7 @@ if [ "$1" == "--help" -o "$1" == "-h" ]; then
     echo "options:"
     echo " * -h | --help   show this message"
     echo " * -d | --dont   don't unstage the files before firing \`git diff\`"
+    exit 1
 fi
 clear
 if [ "$1" != '-d' -a "$1" != '--dont' ]; then
