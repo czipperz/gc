@@ -6,7 +6,9 @@ This program allows for you to easily git commit. You can specify files or allow
 
 It clears the screens, `gd`s, then prompts for a commit message.
 
-There is one option available, `-r` (or `--reset`) which calls `git reset HEAD` for all inputted files.
+There are two options available:
+* `-d` (or `--dont`) which causes it to NOT call `git reset HEAD` for all inputted files.
+* `-h` (of `--help`) brings up the help.
 
 Here is how to easily `git commit` all your files:
 <pre>
